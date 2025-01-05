@@ -1,3 +1,4 @@
+import 'package:dice_app/styled_text.dart';
 import 'package:flutter/material.dart';
 
 class GradientContainer extends StatelessWidget {
@@ -13,10 +14,6 @@ class GradientContainer extends StatelessWidget {
           Color.fromARGB(255, 255, 0, 0),
           Color.fromARGB(255, 119, 0, 0)
         ], begin: Alignment.topLeft)),
-        child: Center(
-            child: Text(
-          'Test',
-          style: TextStyle(fontSize: 28, color: Colors.white),
-        )));
+        child: Center(child: StyledText()));
   }
 }
