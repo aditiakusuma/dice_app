@@ -4,7 +4,7 @@ import 'package:flutter/material.dart';
 void main() {
   runApp(MaterialApp(
     home: Scaffold(
-      body: GradientContainer(),
+      body: GradientContainer(colors: [Colors.black, Colors.white]),
     ),
   ));
 }

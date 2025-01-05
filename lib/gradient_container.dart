@@ -7,16 +7,17 @@ const endAlignment = Alignment.bottomRight;
 class GradientContainer extends StatelessWidget {
   const GradientContainer({
     super.key,
+    required this.colors,
   });
+
+  final List<Color> colors;
 
   @override
   Widget build(BuildContext context) {
     return Container(
-        decoration: const BoxDecoration(
-            gradient: LinearGradient(colors: [
-          Color.fromARGB(255, 255, 0, 0),
-          Color.fromARGB(255, 119, 0, 0)
-        ], begin: startAlignment, end: endAlignment)),
+        decoration: BoxDecoration(
+            gradient: LinearGradient(
+                colors: colors, begin: startAlignment, end: endAlignment)),
         child: Center(child: StyledText('Hello world')));
   }
 }
